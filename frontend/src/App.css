@@ -1,0 +1,247 @@
+/* .landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+
+}
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.landingMainContainer>div:nth-child(1) {
+  font-size: 2.2rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] {
+  background: #D97500;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 1.9rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.landingMainContainer>div:nth-child(2) img {
+  height: 70vh;
+  width: auto;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+} */
+
+
+
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+}
+
+.landingPageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+.navHeader h2 {
+  margin: 0;
+  color: #646c67;
+  font-size: 1.8rem;
+}
+
+.navlist {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navlist p {
+  margin: 0;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.navlist p:hover {
+  color: #ff9839;
+  transform: scale(1.05);
+}
+
+/* Main Landing Content */
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8%;
+  flex-grow: 1;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #fffaf5, #f7f8fc);
+}
+
+.landingMainContainer > div:first-child {
+  max-width: 600px;
+}
+
+.landingMainContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.landingMainContainer p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.landingMainContainer div[role="button"] {
+  display: inline-block;
+  background-color: #3C6FF7;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.landingMainContainer div[role="button"] a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.landingMainContainer div[role="button"]:hover {
+  background-color:#2F5DE0;
+}
+
+.landingMainContainer img {
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .landingMainContainer {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+
+  .navlist {
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navlist p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navHeader h2 {
+    font-size: 1.5rem;
+  }
+
+  .landingMainContainer h1 {
+    font-size: 2rem;
+  }
+
+  .landingMainContainer p {
+    font-size: 1rem;
+  }
+
+  .landingMainContainer img {
+    width: 250px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
